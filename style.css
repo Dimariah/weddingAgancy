@@ -370,6 +370,7 @@ div.same {
 	div.stages div.container div.inside {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
+		gap: 20px;
 	}
 
 	div.stages div.inside img.image {
