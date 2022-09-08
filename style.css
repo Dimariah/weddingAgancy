@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+* {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	scroll-snap-type: y mandatory;
+}
+
+h1, h2,span.cool {
+	font-family: 'Cormorant Infant', serif;;
+}
+
+header.desktop {
+	display: grid;
+	grid-template-columns: 1fr 0.5fr 1fr;
+	align-items: center;
+	padding: 20px;
+}
+
+.logo a {
+	font-size: 40px;
+	padding: 0;
+	font-family: 'Oooh Baby', cursive;
+	color: #567C6D;
+}
+
+header {
+	scroll-snap-align: start;
+}
+
+header a,div.intro a {
+	text-decoration: none;
+	padding: 0 50px;
+	font-size: 15px;
+	color: #888;
+}
+
+header.desktop nav {
+	justify-self: center;
+}
+
+.logo {
+	justify-self: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+header.mobile {
+	display: none;
+	padding: 20px;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 1351px) {
+	header.desktop nav a {
+		padding: 0 35px;
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 1126px) {
+	header.desktop nav a {
+		font-size: 11.5px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	header.desktop {
+		display: none;
+	}
+	header.mobile {
+		display: flex;
+	}
+}
+
+div.intro {
+	position: relative;
+}
+
+div.overley {
+	background-color: black;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	opacity: 0.2;
+}
+
+
+div.content {
+	position: absolute;
+	top: 20%;
+	z-index: 1;
+	color: #fff;
+	left: 50%;
+	text-align: center;
+	width: 953px;
+	margin-left: -476.5px;
+	text-shadow: 1px 1px #567C6D;
+}
+
+div.content h1 {
+	font-size: 100px;
+	width: 100%;
+	letter-spacing: 5px;
+}
+
+div.content p {
+	color: #eee;
+}
+
+div.content button {
+	padding: 15px 30px;
+	margin-top: 50px;
+	background-color: transparent;
+	color: #fff;
+	border-color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+	div.content h1 {
+		font-size: 3rem;
+	}
+
+	div.content p {
+		font-size: 15px;
+		letter-spacing: 1px;
+	}
+
+	div.content button {
+		padding: 10px 20px;
+		font-size: 12px;
+	}
+
+	div.content {
+		width: 716px;
+		left: 50%;
+		margin-left: -358.5px;
+	}
+}
+
+@media screen and (max-width: 756px) {
+	div.content h1 {
+		font-size: 30px;
+	}
+
+	div.content p {
+		font-size: 10px;
+		letter-spacing: 0.5px;
+	}
+
+	div.content button {
+		padding: 5px 10px;
+		font-size: 10px;
+		margin-top: 40px;
+	}
+
+	div.content {
+		width: 463px;
+		left: 50%;
+		margin-left: -231.5px;
+	}
+}
+
+@media screen and (max-width: 477px) {
+	div.content {
+		width: 300px;
+		left: 50%;
+		margin-left: -150px;
+		top: 5%;
+	}
+
+	div.content button {
+		margin-top: 20px;
+		letter-spacing: 0.5px;
+	}
+}
+
+div.about {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 80%;
+	margin: auto;
+	margin-top: 200px;
+	scroll-snap-align: center;
+}
+
+div.about div.text {
+	width: 450px;
+	margin: auto;
+	position: relative;
+}
+
+div.about p {
+	line-height: 40px;
+	margin-top: 50px;
+	text-shadow: 1px 1px #cbc3c3;
+}
+
+div.about h1 {
+	position: relative;
+}
+
+span.cool {
+	position: absolute;
+	z-index: -1;
+	top: -85px;
+	font-size: 200px;
+	color: #ddd;
+	left: -55px;
+}
+
+@media screen and (max-width: 1344px) {
+	div.about div.text {
+		margin-top: 0px;
+	}
+}
+
+@media screen and (max-width: 1232px) {
+	div.about div.text p {
+		line-height: 30px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	div.about div.text p {
+		margin-top: 30px;
+		line-height: 25px;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	div.about {
+		display: block;
+		scroll-snap-align: start;
+	}
+
+	div.about div.text {
+		font-size: 30px;
+		width: 90%;
+	}
+
+	div.about div.text p {
+		line-height: 50px;
+	}
+
+	span.cool {
+		font-size: 250px;
+		top: -100px;
+		left: -60px;
+	}
+}
+
+div.services span.cool {
+	font-size: 100px;
+	top: -40px;
+	left: -30px;
+}
+
+div.services {
+	margin-top: 200px;
+	scroll-snap-align: center;
+}
+
+div.services h1 {
+	position: relative;
+	margin: auto;
+	width: 160px;
+}
+
+div.services div.container {
+	display: grid;
+	grid-template-columns: repeat(8, 250px);
+	grid-template-rows: 1fr;
+	overflow-x: auto;
+	gap: 40px;
+	width: 80%;
+	margin: 50px auto 0 auto;
+	scroll-snap-type: x mandatory;
+}
+
+div.services h2 {
+	font-size: 20px;
+	text-align: center;
+}
+
+div.services div.container div.margin {
+	margin-top: 40px;
+}
+
+div.services a {
+	text-decoration: none;
+	color: black;
+	scroll-snap-align: center;
+}
+
+@media screen and (max-width: 375px) {
+	div.services div.container {
+		gap: 5px;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	div.services {
+		scroll-snap-align: end;
+	}
+}
+
+div.stages {
+	margin-top: 200px;
+	scroll-snap-align: start;
+}
+
+div.stages h1 span.cool {
+	font-size: 70px;
+	top: -10px;
+	left: -18px;
+}
+
+div.stages h1 {
+	position: relative;
+	margin: auto;
+	width: 185px;
+	padding-top: 10px ;
+}
+
+div.stages div.container {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	width: 80%;
+	margin: 25px auto 0 auto;
+}
+
+div.stages div.inside {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+div.stages div.text {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	height: 80%;
+	margin: auto;
+	gap: 10px;
+}
+
+div.same p {
+	margin-top: 20px;
+}
+
+div.stages div.container span {
+	position: relative;
+	font-size: 80px;
+	padding: 0 20px 0 0;
+	font-weight: bolder;
+	color: #ccc;
+	top: -20px;
+}
+
+div.same {
+	display: flex;
+}
+
+@media screen and (max-width: 930px) {
+	div.stages div.container div.inside {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	div.stages div.inside img.image {
+		order: 2;
+	}
+}
